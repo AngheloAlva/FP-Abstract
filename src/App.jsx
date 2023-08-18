@@ -5,6 +5,7 @@ import { useState } from 'react'
 import data from '../data/items-data.json'
 import './App.css'
 import { Item } from '../components/Item'
+import { Footer } from '../components/Footer'
 
 function App () {
   const [searchActive, setSearchActive] = useState(false)
@@ -32,6 +33,7 @@ function App () {
           }
           </section>
       </main>
+      <Footer />
     </>
   )
 }
