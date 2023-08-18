@@ -53,3 +53,20 @@
   color: var(--blue);
 }
 
+main {
+  padding: 7rem 0;
+}
+
+.items {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(17rem, 2fr));
+  gap: 6.1rem;
+  padding: 0 5.4rem;
+}
+
+@media (min-width: 768px) {
+  .items {
+    grid-template-columns: repeat(2, minmax(17rem, 2fr));
+    gap: 6.1rem 2.4rem;
+  }  
+}

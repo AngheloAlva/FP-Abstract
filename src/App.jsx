@@ -1,8 +1,10 @@
 /* eslint-disable no-unused-vars */
 import { NavBar } from '../components/NavBar'
 import { FaArrowRight } from 'react-icons/fa6'
-import './App.css'
 import { useState } from 'react'
+import data from '../data/items-data.json'
+import './App.css'
+import { Item } from '../components/Item'
 
 function App () {
   const [searchActive, setSearchActive] = useState(false)
@@ -19,6 +21,17 @@ function App () {
           </button>
         </form>
       </header>
+      <main>
+        <section className='items'>
+          {
+            data.map((item, i) => {
+              return (
+                <Item key={i} image={item.image} title={item.title} text={item.text} />
+              )
+            })
+          }
+          </section>
+      </main>
     </>
   )
 }
