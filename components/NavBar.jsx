@@ -14,8 +14,19 @@ export const NavBar = () => {
       </div>
 
       <div className='nav-menu'>
-        <FaMagnifyingGlass className='icon icon-search' />
-        <FaBars className='icon' />
+        <div className='nav-menu-resume'>
+          <FaMagnifyingGlass className='icon icon-search' />
+          <FaBars className='icon' />
+        </div>
+
+        <div className='nav-menu-complete'>
+          <button className='btn-request'>
+            Submit a request
+          </button>
+          <button className='btn-singin'>
+            Sign in
+          </button>
+        </div>
       </div>
     </nav>
   )

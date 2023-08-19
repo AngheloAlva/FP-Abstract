@@ -74,3 +74,60 @@ nav a {
 .icon-search:hover {
   font-size: 1.8rem;
 }
+
+.nav-menu-resume {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-menu-complete {
+  display: none;
+  gap: 1rem;
+}
+
+.btn-request {
+  background-color: rgb(25, 26, 27);
+  color:var(--white);
+  padding: 0.375rem 1.375rem;
+  border: 1px solid var(--white);
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  line-height: 36px;
+}
+
+.btn-singin {
+  background-color: var(--blue);
+  color:var(--white);
+  padding: 0.375rem 2rem;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  line-height: 36px;
+  border: none;
+  text-align: center;
+  transition: all .2s ease-in-out;
+}
+
+.btn-singin:hover {
+  background-color: var(--white);
+  color:var(--black);
+}
+
+@media (min-width: 768px) {
+  nav {
+    padding: 0 4.1rem;
+  }
+}
+
+@media (min-width: 1195px) {
+  nav {
+    padding: 0 7.3rem
+  }
+
+  .nav-menu-resume {
+    display: none;
+  }
+
+  .nav-menu-complete {
+    display: flex;
+  }
+}

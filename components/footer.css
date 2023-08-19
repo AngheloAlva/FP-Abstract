@@ -10,6 +10,7 @@ footer {
   grid-template-columns: repeat(2, auto);
   justify-content: flex-start;
   column-gap: 5.25rem;
+  transition: all .2s ease-in-out;
 }
 
 .footer-section ul {
@@ -50,5 +51,39 @@ footer {
 
   .footer-section ul {
     width: 16.25rem;
+  }
+
+  .static-info {
+    right: 3.75rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  .footer-section {
+    display: flex;
+    gap: 0;
+    width: 63%;
+  }
+
+  .footer-section ul {
+    width: 15rem;
+  }
+}
+
+@media (min-width: 1500px) {
+  footer {
+    padding: 0 4.25rem 8.5rem 7.3rem;
+  }
+
+  .footer-section ul {
+    width: 20rem;
+  }
+
+  .footer-section {
+    width: 85%;
+  }
+
+  .static-info {
+    right: 7.3rem;
   }
 }

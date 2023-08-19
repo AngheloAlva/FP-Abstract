@@ -18,6 +18,7 @@
 .search-form {
   position: relative;
   width: 95%;
+  max-width: 45rem;
 }
 
 .search-form input {
@@ -68,5 +69,15 @@ main {
   .items {
     grid-template-columns: repeat(2, minmax(17rem, 2fr));
     gap: 6.1rem 2.4rem;
-  }  
+  }
+
+  .header {
+    height: 24.8rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  main {
+    padding: 7rem 6.5rem;
+  }
 }
