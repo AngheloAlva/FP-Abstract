@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import { NavBar } from '../components/NavBar'
-import { FaArrowRight } from 'react-icons/fa6'
+import { FaArrowRight, FaRegCircleQuestion } from 'react-icons/fa6'
 import { useState } from 'react'
 import data from '../data/items-data.json'
 import './App.css'
@@ -34,6 +34,9 @@ function App () {
           </section>
       </main>
       <Footer />
+      <button id='btn-help'>
+        <FaRegCircleQuestion size={20} /> Help
+      </button>
     </>
   )
 }
